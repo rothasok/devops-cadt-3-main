@@ -12,7 +12,7 @@ jobs:
         uses: appleboy/ssh-action@v1.2.0
         with:
           host: 152.42.250.99
-          username: kimang
+          username: root
           key: ${{ secrets.ROTHA_SERVER_KEY }}
           port: 8000
           script: |
@@ -20,6 +20,6 @@ jobs:
             whoami
             pwd
             ls
-            cd devops-cadt-2
+            cd devops-cadt-3-main
             git pull
             pm2 restart devops-test
