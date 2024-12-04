@@ -20,6 +20,6 @@ jobs:
             whoami
             pwd
             ls
-            cd devops-cadt-3-main
+            cd deops-cadt/devops-cadt-3-main
             git pull
             pm2 restart devops-test
