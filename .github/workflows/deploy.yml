@@ -13,7 +13,7 @@ jobs:
         with:
           host: 152.42.250.99
           username: kimang
-          key: ${{ secrets.SSH_KEY }}
+          key: ${{ ROTHA_SERVER_KEY }}
           port: 8000
           script: |
             . ~/.nvm/nvm.sh
